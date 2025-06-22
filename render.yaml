@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: api-remove
+    env: python
+    buildCommand: ""
+    startCommand: ./start.sh
+    plan: free
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11
